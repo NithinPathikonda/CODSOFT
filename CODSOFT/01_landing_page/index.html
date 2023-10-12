@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <title>College Website</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Course</li>
+                    <li>Blog</li>
+                    <li>Content</li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+
+        </nav>
+        <div class="text-box">
+            <h1>World's Best University</h1>
+            <p>Experience excellence in education at our distinguished institution, consistently ranked as a global leader in academia.</p>
+            <a href="" class="hero-btn">Visit us To Know More</a>
+
+        </div>
+    </section>
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Explore a diverse range of innovative courses designed to shape your future and unleash your potential</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Our intermediate programs provide a solid foundation for your academic journey, equipping you with fundamental knowledge and skills to thrive in higher education.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Unlock a world of opportunities with our comprehensive degree offerings. Tailored to your interests, these programs foster critical thinking, creativity, and specialization in your chosen field.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Elevate your expertise with our esteemed postgraduate programs. These advanced courses empower you to delve deeper into your discipline, conduct groundbreaking research, and emerge as a thought leader in your area of study.</p>
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Explore our global campus, a vibrant hub of cultural diversity, collaboration, and innovation. Connect with students and faculty from around the world, fostering a truly international educational experience.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png" alt="">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png" alt="">
+                <div class="layer">
+                    <h3>NEWYORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png" alt="">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Discover our state-of-the-art facilities, meticulously designed to enrich your educational journey. From cutting-edge labs to inspiring libraries and world-class sports amenities, we provide an environment that empowers your growth. Immerse yourself in a space that fosters creativity, learning, and personal development.</p>
+        <div class="row">
+            <div class="facility-col">
+                <img src="images/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Step into the heart of knowledge at our library, where a world of wisdom awaits. Immerse yourself in a realm of endless books and digital resources, creating a haven for research, discovery, and intellectual exploration.</p>
+
+            </div>
+            <div class="facility-col">
+                <img src="images/basketball.png" alt="">
+                <h3>Largest Playground</h3>
+                <p>Experience the joy of our expansive playground, a vibrant space for active learning and recreation. Here, you can unleash your energy, bond with peers, and foster a healthy lifestyle while enjoying the great outdoors.</p>
+                
+            </div>
+            <div class="facility-col">
+                <img src="images/cafeteria.png" alt="">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Savor a culinary journey at our campus, where delectable dishes meet nutritional excellence. Our chefs craft a diverse menu that delights the palate while promoting your well-being, ensuring that every meal is a delightful and health-conscious experience.</p>   
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="testimonials">
+        <h1>What our Student Says</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, aut dolorum. Earum laboriosam illum, ipsum cumque deleniti repudiandae dolores nostrum harum pariatur? Ea, totam. Placeat, molestias? Optio vel minima recusandae.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="images/user1.jpg" alt="">
+                <div>
+                    <p>Meet Christiean Berkly, a passionate advocate for our college. She believes this institution is a treasure trove of opportunities and growth. "This college has been a transformative journey for me," she says with a twinkle in her eye. "The dedicated faculty and a welcoming community have empowered me to explore my interests and make lifelong friendships. Joining this college not only enriches your academic life but also your personal growth. It's a place where your dreams find wings.</p>
+                    <h3>Christiean Berkly</h3>
+                </div>
+
+            </div>
+            <div class="testimonials-col">
+                <img src="images/user2.jpg" alt="">
+                <div>
+                    <p>And here's John, who radiates enthusiasm for his college experience. "I can't imagine a better place to be," he exclaims. "The benefits of joining this college are endless – from top-tier education to a vibrant campus culture. The support here is phenomenal, and it's where I discovered my true passion. It's not just a college; it's a second home. I've experienced genuine camaraderie and found mentors who truly care about my success. The love I have for this college is immeasurable.</p>
+                    <h3>Jhonathon Bek</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right="-260px";
+        }
+
+    </script>
+
+</body>
+</html>
